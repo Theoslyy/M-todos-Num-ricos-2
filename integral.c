@@ -7,7 +7,7 @@ float integra (float a, float b, int N, float (*f)(float)){
     float Area = 0;
     for(int i = 0; i < N; i++){
         float xi = a + Dx/2 + i*Dx;  
-        Area = Area + f(xi); 
+        Area = Area + Dx*f(xi); 
     }
     return Area; 
 }
